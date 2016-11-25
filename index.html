@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        #h1{
+            color: darkslategrey;
+            font-weight: bolder;
+            padding: 50px;
+        }
+        th{
+            font-weight: bold;
+            color: darkslategray;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1 id="h1">ToDo App</h1>
+        <table id="table1" class="table table-hover">
+            <thead>         
+            <tr>
+                <th>Name:</th>
+                <th>Reg No:</th>
+                <th>Email:</th>
+            </tr>
+            <tbody>
+            <tr>
+                 <td> <input type="text" name="todo" id="name" placeholder="Enter Name" autofocus>  </td>
+                 <td> <input type="number" name="todo" id="reg" placeholder="Enter Reg NO" autofocus>   </td>
+                 <td> <input type="email" name="todo" id="email" placeholder="Enter Email" autofocus> </td>
+                 <td> <button type="button"class="btn btn-primary" id="add" onclick="addTodo()">ADD</button></td> 
+                </tr>
+            </tbody>
+        </table>
+        </center>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
